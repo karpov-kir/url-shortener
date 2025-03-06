@@ -10,8 +10,8 @@
     "lint:eslint:fix": "npm run lint:eslint -- --fix",
     "lint:stylelint": "stylelint \"src/**/*.{css,scss}\"",
     "lint:stylelint:fix": "npm run lint:stylelint -- --fix",
-    "lint": "run-p lint:*[!fix]",
-    "lint:fix": "run-p lint:*:fix",
+    "lint": "run-p -c lint:*[!fix]",
+    "lint:fix": "run-p -c lint:*:fix",
     "preview": "vite preview"
   },
   "dependencies": {
